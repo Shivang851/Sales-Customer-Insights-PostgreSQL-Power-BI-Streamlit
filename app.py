@@ -295,7 +295,7 @@ section[data-testid="stSidebar"] .stRadio label {
 """, unsafe_allow_html=True)
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
-CHARTS = os.path.join(os.path.dirname(r"D:\shivang sharma\shiv ds\project\charts"), "charts")
+CHARTS = os.path.join(os.path.dirname(Charts, "charts")
 
 def load_img(fname):
     path = os.path.join(CHARTS, fname)
