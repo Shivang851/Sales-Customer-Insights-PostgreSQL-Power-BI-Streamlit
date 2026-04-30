@@ -32,7 +32,7 @@ Open: http://localhost:8501
 ## Deploy to Streamlit Cloud (Free)
 
 1. Push this folder to GitHub
-2. Go to https://share.streamlit.io
+2. Go to [https://share.streamlit.io](https://sales-customer-insights-appql-power-bi-app-yl5symuee2fqmuymr5v.streamlit.app/)
 3. Connect repo → select `app.py` → Deploy
 4. Get your public link!
 
