@@ -295,8 +295,9 @@ section[data-testid="stSidebar"] .stRadio label {
 """, unsafe_allow_html=True)
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
-CHARTS = os.path.join(os.path.dirname(Charts, "charts")
-
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+CHARTS = os.path.join(BASE_DIR, "charts")
+# CHARTS = os.path.join(os.path.dirname(Charts, "charts")
 def load_img(fname):
     path = os.path.join(CHARTS, fname)
     if os.path.exists(path):
