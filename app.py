@@ -296,7 +296,7 @@ section[data-testid="stSidebar"] .stRadio label {
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-CHARTS = os.path.join(BASE_DIR, "charts")
+CHARTS = os.path.join(BASE_DIR, "Charts")
 # CHARTS = os.path.join(os.path.dirname(Charts, "charts")
 def load_img(fname):
     path = os.path.join(CHARTS, fname)
