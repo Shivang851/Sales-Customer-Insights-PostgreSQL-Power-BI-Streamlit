@@ -448,11 +448,11 @@ if section == "🏠 Overview":
 
     col1, col2 = st.columns([1.5, 1])
     with col1:
-        img = load_img(r"1.png")
+        img = load_img("1.png")
         if img:
             st.image(img, use_container_width=True, caption="Raw dataset — Classic Models Sales DB")
     with col2:
-        img2 = load_img(r"1.png")
+        img2 = load_img("1.png")
         if img2:
             st.image(img2, use_container_width=True, caption="KPI Summary")
         st.markdown("""
