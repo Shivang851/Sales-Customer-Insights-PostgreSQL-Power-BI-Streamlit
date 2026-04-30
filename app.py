@@ -485,7 +485,7 @@ elif section == "🌍 Global Sales":
     analysis_block(
         label="Geography · Revenue",
         title="Revenue by Country",
-        img_file=r"d:\shivang sharma\shiv ds\project\charts\2.png",
+        img_file="2.png",
         sql_html="""<span class="kw">SELECT</span>
     c.country,
     <span class="fn">SUM</span>(od.quantityordered * od.priceeach) <span class="kw">AS</span> revenue
@@ -520,7 +520,7 @@ elif section == "🚗 Product Analysis":
     analysis_block(
         label="Products · Revenue Share",
         title="Sales by Product Category",
-        img_file=r"D:\shivang sharma\shiv ds\project\charts\3.png",
+        img_file="3.png",
         sql_html="""<span class="kw">SELECT</span>
     p.productline,
     <span class="fn">SUM</span>(od.quantityordered * od.priceeach) <span class="kw">AS</span> total_sales,
@@ -545,7 +545,7 @@ elif section == "🚗 Product Analysis":
     analysis_block(
         label="Products · Geography",
         title="Top Product by Country",
-        img_file=r"D:\shivang sharma\shiv ds\project\charts\4.png",
+        img_file="4.png",
         sql_html="""<span class="kw">WITH</span> ranked <span class="kw">AS</span> (
   <span class="kw">SELECT</span>
     c.country,
@@ -589,7 +589,7 @@ elif section == "📅 Time-Based Analysis":
     analysis_block(
         label="Seasonality · Monthly",
         title="Monthly Sales Trend",
-        img_file=r"D:\shivang sharma\shiv ds\project\charts\5.png",
+        img_file="5.png",
         sql_html="""<span class="kw">SELECT</span>
     <span class="fn">TO_CHAR</span>(o.orderdate, <span class="str">'Mon'</span>)      <span class="kw">AS</span> month_name,
     <span class="fn">EXTRACT</span>(<span class="kw">MONTH FROM</span> o.orderdate) <span class="kw">AS</span> month_num,
@@ -611,7 +611,7 @@ elif section == "📅 Time-Based Analysis":
     analysis_block(
         label="YoY · Annual",
         title="Revenue Year-over-Year",
-        img_file=r"D:\shivang sharma\shiv ds\project\charts\6.png",
+        img_file="6.png",
         sql_html="""<span class="kw">SELECT</span>
     <span class="fn">EXTRACT</span>(<span class="kw">YEAR FROM</span> o.orderdate) <span class="kw">AS</span> year_id,
     <span class="fn">SUM</span>(od.quantityordered * od.priceeach) <span class="kw">AS</span> total_revenue,
